@@ -86,6 +86,7 @@ elif command -v apt > /dev/null; then
 else
     echo 'Unknown OS!'
 fi
+source "$HOME"/dotfilesGlobal.sh
 
 export EDITOR=nvim
 export VISUAL="$EDITOR"
