@@ -79,14 +79,15 @@ source $ZSH/oh-my-zsh.sh
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     source "$HOME"/dotfiles/aliasesMac.sh
+    source "$HOME"/dotfiles/aliasesGlobal.sh
 
 elif command -v apt > /dev/null; then
     source "$HOME"/dotfiles/aliasesDebian.sh
+    source "$HOME"/dotfiles/aliasesGlobal.sh
 
 else
     echo 'Unknown OS!'
 fi
-source "$HOME"/dotfilesGlobal.sh
 
 export EDITOR=nvim
 export VISUAL="$EDITOR"
