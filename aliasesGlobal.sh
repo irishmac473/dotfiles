@@ -4,5 +4,5 @@
 alias vim="nvim"
 
 # Editing
-alias ez="$HOME/dotfiles/.zshrc"
+alias ez="vim $HOME/dotfiles/.zshrc"
 

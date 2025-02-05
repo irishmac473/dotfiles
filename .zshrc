@@ -92,4 +92,4 @@ fi
 export EDITOR=nvim
 export VISUAL="$EDITOR"
 
-clear && fastfetch
+clear && neofetch
