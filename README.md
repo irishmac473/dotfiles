@@ -28,7 +28,7 @@ These are my dotfiles. There are many like them but these ones are mine
 * Emacs <br>
 I keep my Emacs config in another Repo [emacs.d](https://github.com/irishmac473/emacs.d)
   * Mac <br>
-    `brew tap d12frosted/emacs-plus`
+    `brew tap d12frosted/emacs-plus` <br>
     `brew install emacs-plus@29`
 * Font
   * Mac <br>
