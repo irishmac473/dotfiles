@@ -25,3 +25,6 @@ These are my dotfiles. There are many like them but these ones are mine
     `brew install luarocks`
   * Raspberry Pi <br>
     `sudo apt install luarocks`
+* Font
+  * Mac <br>
+    `brew install --cask font-ubuntu-mono`
