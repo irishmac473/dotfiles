@@ -84,7 +84,7 @@ if [[ $(uname) == "Darwin" ]]; then
 elif command -v apt > /dev/null; then
     source "$HOME"/dotfiles/aliasesDebian.sh
     source "$HOME"/dotfiles/aliasesGlobal.sh
-
+    export PATH="/snap/bin/:$PATH"
 else
     echo 'Unknown OS!'
 fi
