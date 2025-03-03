@@ -25,4 +25,7 @@ These are my dotfiles. There are many like them but these ones are mine
       `brew install vim`
     * Raspberry Pi <br>
       `sudo apt install vim`
+* Alacritty
+    * Mac <br>
+      `brew install --cask alacritty`
       
