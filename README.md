@@ -18,4 +18,11 @@ These are my dotfiles. There are many like them but these ones are mine
 * Stow
     * Mac <br>
       `brew install stow`
+    * Raspberry Pi <br>
+      `sudo apt install stow`
+* Vim
+    * Mac <br>
+      `brew install vim`
+    * Raspberry Pi <br>
+      `sudo apt install vim`
       
