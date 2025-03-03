@@ -92,4 +92,4 @@ source "$HOME"/dotfiles/aliasesGlobal.sh
 export EDITOR=vim
 export VISUAL="$EDITOR"
 
-clear && neofetch
+clear && neofetch --config $HOME/.config/neofetch/insertName2.conf
