@@ -1,7 +1,6 @@
 # MAC ONLY ALIASES
 #+++++++++++++++++
 
-alias vim="nvim"
 # Homebrew
 alias bs="brew search"
 alias bi="brew install"
@@ -11,7 +10,7 @@ alias bu="brew update"
 alias bug="brew upgrade"
 
 # Editing
-alias ea="vim $HOME/dotfiles/aliasesMac.sh"
+alias ea="vim $HOME/dotfiles/aliasesMac.sh" # Edit Local Aliases
 
 alias ua="cat $HOME/dotfiles/aliasesMac.sh && cat $HOME/dotfiles/aliasesGlobal.sh"
 

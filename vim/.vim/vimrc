@@ -1,0 +1,30 @@
+set nocompatible
+filetype plugin on
+syntax on
+" Tab is really 4 spaces. See :help tabstop
+set softtabstop=4 shiftwidth=4 expandtab
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+set laststatus=2
+set statusline=%f\ %y%=Line:%l/%L\ Col:%03c
+set hlsearch
+set cursorline
+set mouse=
+set pastetoggle=<F12>
+set backspace=indent,start
+if v:version < 802
+    packadd! dracula
+endif
+colorscheme dracula
+
+" Set leader
+let mapleader = " " " map leader to Space
+" Make matching nested element not look like cursor
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+" Don't auto-indent HTML - it's awful!!!!
+au FileType html setlocal indentexpr=
+" Use arrow keys to cycle through buffers
+nnoremap <silent> <right> :bnext<cr>
+nnoremap <silent> <left> :bprev<cr>
+" Ctrl+a replays whatever macro I've recorded as "a"
+nnoremap <C-a> @a

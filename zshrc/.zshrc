@@ -89,9 +89,7 @@ fi
 
 source "$HOME"/dotfiles/aliasesGlobal.sh
 
-export PATH="$HOME/.luarocks/bin:$PATH"
-
-export EDITOR=nvim
+export EDITOR=vim
 export VISUAL="$EDITOR"
 
 clear && neofetch
