@@ -2,30 +2,24 @@
 These are my dotfiles. There are many like them but these ones are mine
 
 # Dependencies
-## All Systems
+* Homebrew
+  `xcode-select --install`
+  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * zsh shell
-    * Mac <br>
-      `brew install zsh`
-    * Raspberry Pi <br>
-      `sudo apt install zsh`
+  `brew install zsh`
 * [oh-my-zsh](https://ohmyz.sh) <br>
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 * neofetch
-    * Mac <br>
-      `brew install neofetch`
-    * Raspberry Pi <br>
-      `sudo apt install neofetch`
+  `brew install neofetch`
 * Stow
-    * Mac <br>
-      `brew install stow`
-    * Raspberry Pi <br>
-      `sudo apt install stow`
+  `brew install stow`
 * Vim
-    * Mac <br>
-      `brew install vim`
-    * Raspberry Pi <br>
-      `sudo apt install vim`
+  `brew install vim`
 * Alacritty
-    * Mac <br>
-      `brew install --cask alacritty`
-      
+  `brew install --cask alacritty`
+* Jetbrains Nerd Font Mono
+  `brew install --cask font-jetbrains-mono-nerd-font`
+
+## All of the Homebrew Commands as one
+`brew install zsh neofetch stow vim`
+`brew install --cask alacritty font-jetbrains-mono-nerd-font`

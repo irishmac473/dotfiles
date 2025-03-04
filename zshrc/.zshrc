@@ -76,18 +76,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# What OS are we running?
-if [[ $(uname) == "Darwin" ]]; then
-    source "$HOME"/dotfiles/aliasesMac.sh
-
-elif command -v apt > /dev/null; then
-    source "$HOME"/dotfiles/aliasesDebian.sh
-    export PATH="/snap/bin:$PATH"
-else
-    echo 'Unknown OS!'
-fi
-
-source "$HOME"/dotfiles/aliasesGlobal.sh
+source "$HOME"/dotfiles/aliases.sh
 
 export EDITOR=vim
 export VISUAL="$EDITOR"

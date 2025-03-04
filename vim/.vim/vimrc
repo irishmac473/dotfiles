@@ -1,8 +1,10 @@
+" GENERAL
+"###################
 set nocompatible
 filetype plugin on
 syntax on
-" Tab is really 4 spaces. See :help tabstop
-set softtabstop=4 shiftwidth=4 expandtab
+" Tab set to 2 spaces. See :help tabstop
+set softtabstop=2 shiftwidth=2 expandtab
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 set laststatus=2
@@ -11,13 +13,13 @@ set hlsearch
 set cursorline
 set mouse=
 set pastetoggle=<F12>
-set backspace=indent,start
-if v:version < 802
-    packadd! dracula
-endif
-colorscheme dracula
 
-" Set leader
+" COLORS
+"###################
+colorscheme catppuccin_mocha
+
+" KEY BINDINGS
+"###################
 let mapleader = " " " map leader to Space
 " Make matching nested element not look like cursor
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
@@ -28,3 +30,10 @@ nnoremap <silent> <right> :bnext<cr>
 nnoremap <silent> <left> :bprev<cr>
 " Ctrl+a replays whatever macro I've recorded as "a"
 nnoremap <C-a> @a
+
+" VIMWIKI
+"###################
+" Set wiki path and change syntax to Markdown
+let g:vimwiki_list = [{'path': '~/iCloud/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0 " don't treat all .md as wiki
