@@ -7,10 +7,10 @@ These are my dotfiles. There are many like them but these ones are mine
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 * zsh shell<br>
   `brew install zsh`
-* [oh-my-zsh](https://ohmyz.sh) <br>
-  `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-* neofetch<br>
-  `brew install neofetch`
+* Starship<br>
+  `brew install starship`
+* Fastfetch<br>
+  `brew install fastfetch`
 * Stow<br>
   `brew install stow`
 * Vim<br>
@@ -21,5 +21,5 @@ These are my dotfiles. There are many like them but these ones are mine
   `brew install --cask font-jetbrains-mono-nerd-font`
 
 ## All of the Homebrew Commands as one
-`brew install zsh neofetch stow vim`<br>
+`brew install zsh starship fastfetch stow vim`<br>
 `brew install --cask alacritty font-jetbrains-mono-nerd-font`
